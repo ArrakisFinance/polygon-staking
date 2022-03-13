@@ -3,7 +3,7 @@ export const getAddressBookByNetwork = (network: string) => {
   switch (network) {
     case "optimism":
       return {
-        AdminMultiSig: "",
+        AdminMultiSig: "0xAa2E0c5c85ACb7717e58060AB3c96d2B184EE07C",
         GaugeImplementation: "",
         MockCRV: "",
         MockVE: "",

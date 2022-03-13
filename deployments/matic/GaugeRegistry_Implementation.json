@@ -1,0 +1,204 @@
+{
+  "address": "0xa8fA578EB031501586fb393Ffd881C11743Fa9dd",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "gauge",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "vault",
+          "type": "address"
+        }
+      ],
+      "name": "AddGauge",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "gauge",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "vault",
+          "type": "address"
+        }
+      ],
+      "name": "RemoveGauge",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newGauge",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "vault",
+          "type": "address"
+        }
+      ],
+      "name": "addGauge",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "gaugeToVault",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "gauges",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "gauge",
+          "type": "address"
+        }
+      ],
+      "name": "removeGauge",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x1953594984f0137370484467925262e45c8fcd196b9c73ce0ddbe816734e62cc",
+  "receipt": {
+    "to": null,
+    "from": "0xAa2E0c5c85ACb7717e58060AB3c96d2B184EE07C",
+    "contractAddress": "0xa8fA578EB031501586fb393Ffd881C11743Fa9dd",
+    "transactionIndex": 24,
+    "gasUsed": "408228",
+    "logsBloom": "0x00000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000008008000000000000000000000800000000000000000000100000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000040200080000000000000000000000000000000000000000000000000000000004000000000000000000001000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000180000",
+    "blockHash": "0x2c5d99f668098dd7eb05d7afddb63ced950f2e184c51f175451d8ad1ce143c42",
+    "transactionHash": "0x1953594984f0137370484467925262e45c8fcd196b9c73ce0ddbe816734e62cc",
+    "logs": [
+      {
+        "transactionIndex": 24,
+        "blockNumber": 25909048,
+        "transactionHash": "0x1953594984f0137370484467925262e45c8fcd196b9c73ce0ddbe816734e62cc",
+        "address": "0x0000000000000000000000000000000000001010",
+        "topics": [
+          "0x4dfe1bbbcf077ddc3e01291eea2d5c70c2b422b415d95645b9adcfd678cb1d63",
+          "0x0000000000000000000000000000000000000000000000000000000000001010",
+          "0x000000000000000000000000aa2e0c5c85acb7717e58060ab3c96d2b184ee07c",
+          "0x0000000000000000000000004f856f79f54592a48c8a1a1fafa1b0a3ac053f99"
+        ],
+        "data": "0x0000000000000000000000000000000000000000000000000048840f660d55ac000000000000000000000000000000000000000000000004fda693a7e4908f72000000000000000000000000000000000000000000006447023fc406b28065a7000000000000000000000000000000000000000000000004fd5e0f987e8339c600000000000000000000000000000000000000000000644702884816188dbb53",
+        "logIndex": 95,
+        "blockHash": "0x2c5d99f668098dd7eb05d7afddb63ced950f2e184c51f175451d8ad1ce143c42"
+      }
+    ],
+    "blockNumber": 25909048,
+    "cumulativeGasUsed": "4620117",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "0b1c7315df507b8ee316c85917394da5",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"gauge\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"vault\",\"type\":\"address\"}],\"name\":\"AddGauge\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"gauge\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"vault\",\"type\":\"address\"}],\"name\":\"RemoveGauge\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newGauge\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"vault\",\"type\":\"address\"}],\"name\":\"addGauge\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"gaugeToVault\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"gauges\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"gauge\",\"type\":\"address\"}],\"name\":\"removeGauge\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/GaugeRegistry.sol\":\"GaugeRegistry\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/GaugeRegistry.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.7;\\n\\nimport { Proxied } from \\\"./vendor/proxy/Proxied.sol\\\";\\n\\ncontract GaugeRegistry is Proxied {\\n\\n    address[] public gauges;\\n    mapping(address => address) public gaugeToVault;\\n\\n    event AddGauge(address gauge, address vault);\\n    event RemoveGauge(address gauge, address vault);\\n\\n    constructor () {} // solhint-disable no-empty-blocks\\n\\n    function addGauge(address newGauge, address vault) external onlyProxyAdmin {\\n        require(gaugeToVault[newGauge] == address(0), \\\"GaugeRegistry: gauge already added\\\");\\n        gauges.push(newGauge);\\n        gaugeToVault[newGauge] = vault;\\n        emit AddGauge(newGauge, vault);\\n    }\\n\\n    function removeGauge(address gauge) external onlyProxyAdmin {\\n        _removeFromArray(gauge);\\n        emit RemoveGauge(gauge, gaugeToVault[gauge]);\\n        delete gaugeToVault[gauge];\\n    }\\n\\n    function _removeFromArray(address target) internal {\\n        uint256 index = 1 ether;\\n        address[] memory _gauges = gauges;\\n        for (uint256 i=0; i<_gauges.length; i++) {\\n            if (_gauges[i] == target) {\\n                index = i;\\n                break;\\n            }\\n        }\\n        require(index < 1 ether, \\\"GaugeRegistry: element not found\\\");\\n        gauges[index] = _gauges[_gauges.length-1];\\n        gauges.pop();\\n    }\\n}\",\"keccak256\":\"0xd609fa7c10307fbc7aeb13f956b5a78d1b486647fa7c2bb1bee2dd61011ecbaa\",\"license\":\"MIT\"},\"contracts/vendor/proxy/Proxied.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-3.0\\npragma solidity 0.8.7;\\n\\nabstract contract Proxied {\\n    /// @notice to be used by initialisation / postUpgrade function so that only the proxy's admin can execute them\\n    /// It also allows these functions to be called inside a contructor\\n    /// even if the contract is meant to be used without proxy\\n    modifier proxied() {\\n        address proxyAdminAddress = _proxyAdmin();\\n        // With hardhat-deploy proxies\\n        // the proxyAdminAddress is zero only for the implementation contract\\n        // if the implementation contract want to be used as a standalone/immutable contract\\n        // it simply has to execute the `proxied` function\\n        // This ensure the proxyAdminAddress is never zero post deployment\\n        // And allow you to keep the same code for both proxied contract and immutable contract\\n        if (proxyAdminAddress == address(0)) {\\n            // ensure can not be called twice when used outside of proxy : no admin\\n            // solhint-disable-next-line security/no-inline-assembly\\n            assembly {\\n                sstore(\\n                    0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103,\\n                    0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF\\n                )\\n            }\\n        } else {\\n            require(msg.sender == proxyAdminAddress);\\n        }\\n        _;\\n    }\\n\\n    modifier onlyProxyAdmin() {\\n        require(msg.sender == _proxyAdmin(), \\\"NOT_AUTHORIZED\\\");\\n        _;\\n    }\\n\\n    function _proxyAdmin() internal view returns (address adminAddress) {\\n        // solhint-disable-next-line security/no-inline-assembly\\n        assembly {\\n            adminAddress := sload(\\n                0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103\\n            )\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0x919d62646ac072a8e6e6356365016d83953036426efa21338eb2d2c0ea57dcdf\",\"license\":\"GPL-3.0\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061066c806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806316209165146100515780633a045145146100665780637ed1f7ba14610079578063b0539187146100be575b600080fd5b61006461005f366004610576565b6100d1565b005b610064610074366004610554565b61025e565b6100a2610087366004610554565b6001602052600090815260409020546001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b6100a26100cc3660046105a9565b610359565b7fb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103546001600160a01b0316336001600160a01b0316146101495760405162461bcd60e51b815260206004820152600e60248201526d1393d517d055551213d49256915160921b60448201526064015b60405180910390fd5b6001600160a01b0382811660009081526001602052604090205416156101bc5760405162461bcd60e51b815260206004820152602260248201527f476175676552656769737472793a20676175676520616c726561647920616464604482015261195960f21b6064820152608401610140565b60008054600180820183557f290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e56390910180546001600160a01b03199081166001600160a01b03878116918217909355808552602093845260409485902080549092169286169283179091558351908152918201527f82ec1cbe428cca584a7a3ab0a9506a3c8583f7a8d14e3b81184c5c632e83420e910160405180910390a15050565b7fb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103546001600160a01b0316336001600160a01b0316146102d15760405162461bcd60e51b815260206004820152600e60248201526d1393d517d055551213d49256915160921b6044820152606401610140565b6102da81610383565b6001600160a01b03818116600081815260016020908152604091829020548251938452909316928201929092527fd0a8f460dc5355ab99f1304f75d5222692bf3d8d855d956b42e24c2639e8cae9910160405180910390a16001600160a01b0316600090815260016020526040902080546001600160a01b0319169055565b6000818154811061036957600080fd5b6000918252602090912001546001600160a01b0316905081565b6000670de0b6b3a764000090506000808054806020026020016040519081016040528092919081815260200182805480156103e757602002820191906000526020600020905b81546001600160a01b031681526001909101906020018083116103c9575b5050505050905060005b815181101561044757836001600160a01b031682828151811061041657610416610620565b60200260200101516001600160a01b0316141561043557809250610447565b8061043f816105d9565b9150506103f1565b50670de0b6b3a7640000821061049f5760405162461bcd60e51b815260206004820181905260248201527f476175676552656769737472793a20656c656d656e74206e6f7420666f756e646044820152606401610140565b80600182516104ae91906105c2565b815181106104be576104be610620565b6020026020010151600083815481106104d9576104d9610620565b6000918252602082200180546001600160a01b0319166001600160a01b0393909316929092179091558054806105115761051161060a565b600082815260209020810160001990810180546001600160a01b0319169055019055505050565b80356001600160a01b038116811461054f57600080fd5b919050565b60006020828403121561056657600080fd5b61056f82610538565b9392505050565b6000806040838503121561058957600080fd5b61059283610538565b91506105a060208401610538565b90509250929050565b6000602082840312156105bb57600080fd5b5035919050565b6000828210156105d4576105d46105f4565b500390565b60006000198214156105ed576105ed6105f4565b5060010190565b634e487b7160e01b600052601160045260246000fd5b634e487b7160e01b600052603160045260246000fd5b634e487b7160e01b600052603260045260246000fdfea2646970667358221220c20e49da2457b7c4d7cbb1cb6c71894bedfa2f629a68cb2a6438bbf588c4f9d964736f6c63430008070033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c806316209165146100515780633a045145146100665780637ed1f7ba14610079578063b0539187146100be575b600080fd5b61006461005f366004610576565b6100d1565b005b610064610074366004610554565b61025e565b6100a2610087366004610554565b6001602052600090815260409020546001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b6100a26100cc3660046105a9565b610359565b7fb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103546001600160a01b0316336001600160a01b0316146101495760405162461bcd60e51b815260206004820152600e60248201526d1393d517d055551213d49256915160921b60448201526064015b60405180910390fd5b6001600160a01b0382811660009081526001602052604090205416156101bc5760405162461bcd60e51b815260206004820152602260248201527f476175676552656769737472793a20676175676520616c726561647920616464604482015261195960f21b6064820152608401610140565b60008054600180820183557f290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e56390910180546001600160a01b03199081166001600160a01b03878116918217909355808552602093845260409485902080549092169286169283179091558351908152918201527f82ec1cbe428cca584a7a3ab0a9506a3c8583f7a8d14e3b81184c5c632e83420e910160405180910390a15050565b7fb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103546001600160a01b0316336001600160a01b0316146102d15760405162461bcd60e51b815260206004820152600e60248201526d1393d517d055551213d49256915160921b6044820152606401610140565b6102da81610383565b6001600160a01b03818116600081815260016020908152604091829020548251938452909316928201929092527fd0a8f460dc5355ab99f1304f75d5222692bf3d8d855d956b42e24c2639e8cae9910160405180910390a16001600160a01b0316600090815260016020526040902080546001600160a01b0319169055565b6000818154811061036957600080fd5b6000918252602090912001546001600160a01b0316905081565b6000670de0b6b3a764000090506000808054806020026020016040519081016040528092919081815260200182805480156103e757602002820191906000526020600020905b81546001600160a01b031681526001909101906020018083116103c9575b5050505050905060005b815181101561044757836001600160a01b031682828151811061041657610416610620565b60200260200101516001600160a01b0316141561043557809250610447565b8061043f816105d9565b9150506103f1565b50670de0b6b3a7640000821061049f5760405162461bcd60e51b815260206004820181905260248201527f476175676552656769737472793a20656c656d656e74206e6f7420666f756e646044820152606401610140565b80600182516104ae91906105c2565b815181106104be576104be610620565b6020026020010151600083815481106104d9576104d9610620565b6000918252602082200180546001600160a01b0319166001600160a01b0393909316929092179091558054806105115761051161060a565b600082815260209020810160001990810180546001600160a01b0319169055019055505050565b80356001600160a01b038116811461054f57600080fd5b919050565b60006020828403121561056657600080fd5b61056f82610538565b9392505050565b6000806040838503121561058957600080fd5b61059283610538565b91506105a060208401610538565b90509250929050565b6000602082840312156105bb57600080fd5b5035919050565b6000828210156105d4576105d46105f4565b500390565b60006000198214156105ed576105ed6105f4565b5060010190565b634e487b7160e01b600052601160045260246000fd5b634e487b7160e01b600052603160045260246000fd5b634e487b7160e01b600052603260045260246000fdfea2646970667358221220c20e49da2457b7c4d7cbb1cb6c71894bedfa2f629a68cb2a6438bbf588c4f9d964736f6c63430008070033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 8,
+        "contract": "contracts/GaugeRegistry.sol:GaugeRegistry",
+        "label": "gauges",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_array(t_address)dyn_storage"
+      },
+      {
+        "astId": 12,
+        "contract": "contracts/GaugeRegistry.sol:GaugeRegistry",
+        "label": "gaugeToVault",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_address)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_address)dyn_storage": {
+        "base": "t_address",
+        "encoding": "dynamic_array",
+        "label": "address[]",
+        "numberOfBytes": "32"
+      },
+      "t_mapping(t_address,t_address)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => address)",
+        "numberOfBytes": "32",
+        "value": "t_address"
+      }
+    }
+  }
+}
