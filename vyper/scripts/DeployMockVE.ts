@@ -18,32 +18,29 @@ const deploy = async () => {
     console.log(
       `Deploying Vyper Contracts to ${network.name}. Hit ctrl + c to abort`
     );
-    await sleep(20000);
+    await sleep(10000);
   }
   const [signer] = await ethers.getSigners();
   const veFactory = ethers.ContractFactory.fromSolidity(VoteEscrow);
-  const ve = await veFactory.connect(signer).deploy(
-    crvAddress,
-    "Vote Escrowed CRV",
-    "veCRV",
-    "1.0.0",
-    { gasLimit: 6000000 }
-  );
+  const ve = await veFactory
+    .connect(signer)
+    .deploy(crvAddress, "Vote Escrowed CRV", "veCRV", "1.0.0", {
+      gasLimit: 6000000,
+    });
   console.log("VOTING ESCROW DEPLOYED:", ve.address);
   await sleep(10000);
   const veBoostFactory = ethers.ContractFactory.fromSolidity(EscrowDelegation);
   const veBoost = await veBoostFactory
     .connect(signer)
-    .deploy(
-      ve.address,
-      ethers.constants.AddressZero,
-      addresses.AdminMultiSig,
-      { gasLimit: 6000000 }
-    );
+    .deploy(ve.address, ethers.constants.AddressZero, addresses.AdminMultiSig, {
+      gasLimit: 6000000,
+    });
   console.log("DELEGATION PROXY DEPLOYED:", veBoost.address);
   await sleep(10000);
   const gaugeImplFactory = ethers.ContractFactory.fromSolidity(Gauge);
-  const gaugeImpl = await gaugeImplFactory.connect(signer).deploy({ gasLimit: 6000000 });
+  const gaugeImpl = await gaugeImplFactory
+    .connect(signer)
+    .deploy({ gasLimit: 6000000 });
   console.log("GAUGE IMPLEMENTATION DEPLOYED:", gaugeImpl.address);
 };
 

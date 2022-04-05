@@ -74,7 +74,7 @@ struct Reward:
 
 MAX_REWARDS: constant(uint256) = 8
 TOKENLESS_PRODUCTION: constant(uint256) = 40
-WEEK: constant(uint256) = 604800
+WEEK: constant(uint256) = 2419200 # EDIT: MONTHLY NOT WEEKLY REWARDS
 
 SPICE: public(address)
 voting_escrow: public(address)

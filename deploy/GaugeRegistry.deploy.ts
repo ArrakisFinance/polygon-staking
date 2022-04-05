@@ -29,6 +29,7 @@ const func: DeployFunction = async (hre: HardhatRuntimeEnvironment) => {
     },
     args: [],
     log: hre.network.name !== "hardhat" ? true : false,
+    gasPrice: hre.ethers.utils.parseUnits("0.002", "gwei"),
   });
 };
 
@@ -38,8 +39,8 @@ func.skip = async (hre: HardhatRuntimeEnvironment) => {
   const shouldSkip =
     hre.network.name === "mainnet" ||
     hre.network.name === "matic" ||
-    hre.network.name === "goerli" ||
-    hre.network.name === "optimism";
+    //hre.network.name === "optimism" ||
+    hre.network.name === "goerli";
 
   return shouldSkip ? true : false;
 };

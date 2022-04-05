@@ -5,9 +5,7 @@ import { getAddressBookByNetwork } from "../../src/config";
 
 const addresses = getAddressBookByNetwork(network.name);
 
-const deploy = async (
-  lpTokenAddr: string
-) => {
+const deploy = async (lpTokenAddr: string) => {
   const crvAddress = (await deployments.get("MockCRV")).address;
   console.log("crv address:", crvAddress);
   if (
@@ -25,7 +23,10 @@ const deploy = async (
     await sleep(20000);
   }
   const [signer] = await ethers.getSigners();
-  const gaugeImpl = await ethers.getContractAt(LiquidityGaugeV4.abi, addresses.GaugeImplementation);
+  const gaugeImpl = await ethers.getContractAt(
+    LiquidityGaugeV4.abi,
+    addresses.GaugeImplementation
+  );
   const encoded = gaugeImpl.interface.encodeFunctionData("initialize", [
     lpTokenAddr,
     addresses.AdminMultiSig,
@@ -39,6 +40,7 @@ const deploy = async (
     .connect(signer)
     .deploy(addresses.GaugeImplementation, await signer.getAddress(), encoded, {
       gasLimit: 6000000,
+      gasPrice: ethers.utils.parseUnits("40", "gwei"),
     });
 
   console.log("GAUGE DEPLOYED:", contract.address);
@@ -47,6 +49,6 @@ const deploy = async (
 (async () => {
   await deploy(
     // LP TOKEN ADDRESS
-    "LP_TOKEN_ADDRESS_HERE",
+    "0x4Fe4d754d1B2feaAd266332CfE3d3fcaa632c953"
   );
 })();

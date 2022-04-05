@@ -13,5 +13,3 @@ download dependencies from requirements.txt (python virtual environement recomen
 ## compile
 
 brownie compile
-
-

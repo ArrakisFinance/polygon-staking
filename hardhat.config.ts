@@ -3,6 +3,7 @@ import { HardhatUserConfig } from "hardhat/config";
 // PLUGINS
 import "@nomiclabs/hardhat-waffle";
 import "@nomiclabs/hardhat-ethers";
+import "@nomiclabs/hardhat-etherscan";
 import "@typechain/hardhat";
 import "hardhat-deploy";
 
